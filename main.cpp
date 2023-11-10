@@ -4,7 +4,7 @@
 #include "particle.hpp"
 #include <ctime>
 
-void traccia2() {
+int main() {
   srand(time(NULL));
   gRandom->SetSeed();
   Particle::AddParticleType("pioni+", 0.13957, 1);
