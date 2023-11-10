@@ -137,7 +137,7 @@ void traccia3()
             << f3expo->GetChisquare() / f3expo->GetNDF()
             << " Probabilità del fit = " << f3expo->GetProb() << std::endl;
   h13->DrawCopy();
-  gaussian1->Draw("SAME");
+  // gaussian1->Draw("SAME");
   c14->cd();
   h14->Add(h10, h11, 1, -1);
   h14->Fit("gaussian1", "Q");
@@ -152,7 +152,7 @@ void traccia3()
             << gaussian1->GetChisquare() / gaussian1->GetNDF()
             << " Probabilità del fit = " << gaussian1->GetProb() << std::endl;
   h14->DrawCopy();
-  gaussian1->Draw("SAME");
+  // gaussian1->Draw("SAME");
   /*punto 12
 
    c7->Print("c7.pdf");
